@@ -1,0 +1,132 @@
+@import "_reset.css";
+/*  Color palette
+    -----------------------
+    color       HEX code  RGB code
+    -------------------------------------
+    red:      	#960001	  rgb(150,0,1)
+    yellow:     #e2e55f	  rgb(226,229,95)
+    green:      #96c25f	  rgb(150,194,95)
+    blue:       #5582c6	  rgb(85,130,198)
+    purple: 	  #79519f	  rgb(121,81,159) 
+
+    fonts
+    -----------------------
+    headings:   Cabin
+    body:       Roboto
+
+    font-sizes:
+    -----------------------
+    h1:   70px
+    h2:   36px
+    h3    24px
+    body: 17px (all other text)
+
+    breakpoints
+    -----------------------
+    desktop: 1200px
+    
+    max-width of the content is 1400px
+*/
+
+/* Add all of your styles here */
+body {
+  font-family: Cabin, sans-serif;
+  color: white;
+  font-size: 20px;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+body {
+  font-size: 17px;
+}
+
+.wrapper {
+  width: 1182px;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0px auto;
+  background-color: rgb(85, 130, 198);
+  overflow: hidden;
+}
+.head {
+  height: 600px;
+  overflow: hidden;
+}
+.head.wallpaperImage {
+  height: 1000px;
+}
+.sec_moviePoster {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  width: 1182px;
+  height: 200px;
+  position: relative;
+}
+.moviePosterImage {
+  width: 320px;
+  height: 450px;
+  z-index: 100;
+  position: absolute;
+  top: -240px;
+  left: 150px;
+}
+.title {
+  padding: 10px;
+  color: rgb(150, 0, 1);
+  background-color: white;
+  font-family: Cabin, sans-serif;
+}
+.space_div {
+  width: 50%;
+  height: 50px;
+}
+.sec-title {
+  width: 100%;
+  color: rgb(150, 0, 1);
+  font-family: Cabin, sans-serif;
+  border-bottom: 2.5px solid yellow;
+  padding-bottom: 7px;
+  margin-top: 35px;
+}
+
+.synopsis p {
+  padding: 60px 0px 20px 0px;
+}
+
+.container {
+  padding: 15px;
+  width: 600px;
+  display: inline-box;
+}
+.container img:hover {
+  border: 3px solid white;
+  paddin: 5px;
+}
+.chracter-name {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(150, 0, 1);
+  font-family: Cabin, sans-serif;
+  padding-bottom: 7px;
+}
+
+.author {
+  width: 100%;
+  font-size: 17px;
+  font-weight: bolder;
+  color: yellow;
+  font-family: Cabin, sans-serif;
+  padding-bottom: 10px;
+}
